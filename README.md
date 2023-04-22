@@ -20,6 +20,18 @@ sudo bash -c 'echo $(which fish) >> /etc/shells'
 chsh -s $(which fish)
 ```
 
+### Fonts
+https://github.com/ryanoasis/nerd-fonts
+
+### fisher
+```bash
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+```
+https://github.com/jorgebucaran/fisher
+
+### Tide 
+https://github.com/IlanCosman/tide#fonts
+
 ### Install rosetta
 /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 

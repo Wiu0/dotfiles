@@ -5,10 +5,20 @@
 ### Instalando Git e coisas básicas
 xcode-select --install
 
-### Oh My ZSH
-sudo sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm 
-rm -rf ~/.zshrc
+### Fish (https://gist.github.com/idleberg/9c7aaa3abedc58694df5)
+# Installation
+
+1. Install [fish](http://fishshell.com/) via [Brew](http://brew.sh/)
+2. Optionally install [Oh My Fish!](https://github.com/oh-my-fish/oh-my-fish) 
+3. Add fish to known shells
+4. Set default shell to fish
+
+```bash
+brew install fish  
+curl -L https://get.oh-my.fish | fish
+sudo bash -c 'echo $(which fish) >> /etc/shells'
+chsh -s $(which fish)
+```
 
 ### Install rosetta
 /usr/sbin/softwareupdate --install-rosetta --agree-to-license
